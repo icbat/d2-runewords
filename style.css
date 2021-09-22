@@ -11,24 +11,39 @@ input {
 #runeInputs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+#runeInputs div input {
+    margin: 12px;
+}
+
+#runeInputs {
+    margin-bottom: 24px;
+}
+
+#runewordsWrapper {
+    display: grid;
+    justify-content: space-around;
 }
 
 table td {
     border: 0;
+    padding: 12px;
 }
 
 table tr.normalCountessRunes, #normalCountessRunes {
-    background-color: #001d7c;
+    background-color: #082d08;
 }
 
 table tr.nightmareCountessRunes, #nightmareCountessRunes {
-    background-color: #330000;
+    background-color: #08112d;
 }
 
 table tr.hellCountessRunes, #hellCountessRunes {
-    background-color: #005500;
+    background-color: #2f0b0b;
 }
 
 table tr.nonCountessRunes, #nonCountessRunes {
-    background-color: #555500;
+    background-color: #313107;
 }
