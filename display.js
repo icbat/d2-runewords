@@ -37,7 +37,7 @@ const renderRunewords = () => {
     const x = [...runewordsWrapper.children].forEach(child => { child.remove() })
     const selectedRunes = [...document.getElementsByTagName('input')]
         .filter(el => el.checked)
-        .map(el => el.name)
+        .map(el => el.value)
 
     const nameFilter = document.getElementById('filter-name').value
     const effectsFilter = document.getElementById('filter-effects').value
@@ -56,7 +56,6 @@ const createRuneBox = targetId => rune => {
 
     const input = document.createElement('input')
     input.type = 'checkbox'
-    input.name = rune
     input.value = rune
     input.defaultChecked = true
     input.onchange = renderRunewords
@@ -73,3 +72,11 @@ hellCountessRunes.forEach(createRuneBox('hellCountessRunes'))
 nonCountessRunes.forEach(createRuneBox('nonCountessRunes'))
 
 renderRunewords()
+
+const toggleColumn = (that) => {
+    console.log(that.checked)
+    const [_thisOne, ...toToggle] = [...that.parentElement.getElementsByTagName('input')]
+
+    toToggle.forEach(el => el.checked = that.checked)
+    renderRunewords()
+}
