@@ -6,6 +6,22 @@ const listToLines = stringList => {
     })
 }
 
+const lowestRuneCategory = runes => {
+    if (runes.some(rune => nonCountessRunes.includes(rune))) {
+        return 'nonCountessRunes'
+    }
+
+    if (runes.some(rune => hellCountessRunes.includes(rune))) {
+        return 'hellCountessRunes'
+    }
+
+    if (runes.some(rune => nightmareCountessRunes.includes(rune))) {
+        return 'nightmareCountessRunes'
+    }
+
+    return 'normalCountessRunes'
+}
+
 const createRunewordRow = runeword => {
     const wrapper = document.createElement('tr')
 
@@ -23,6 +39,8 @@ const createRunewordRow = runeword => {
 
     const effects = document.createElement('td')
     listToLines(runeword.effects).forEach(el => effects.appendChild(el))
+
+    wrapper.className = lowestRuneCategory(runeword.runes)
 
     wrapper.append(name)
     wrapper.append(level)
