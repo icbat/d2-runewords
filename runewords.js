@@ -7,8 +7,16 @@ const runewords = [
             'Ort',
             'Tal',
         ],
-        type: [
+        itemTypes: [
             'Shields',
+        ],
+        effects: [
+            "+50% Enhanced Defense",
+            "Cold Resist +43%",
+            "Fire Resist +48% (Ral=35%)",
+            "Lightning Resist +48% (Ort=35%)",
+            "Poison Resist +48% (Tal=35%)",
+            "10% Damage Goes To Mana",
         ],
     },
     {
@@ -21,10 +29,24 @@ const runewords = [
             'Mal',
             'Lum',
         ],
-        type: [
+        itemTypes: [
             'Axes',
             'Hammers',
             'Scepters',
+        ],
+        effects: [
+            "Level 9 Fanaticism Aura When Equipped",
+            "+40% Increased Attack Speed",
+            "+240-270% Enhanced Damage (varies)",
+            "20% Chance of Crushing Blow (Ber)",
+            "25% Chance of Open Wounds (Um)",
+            "+3 To Werebear",
+            "+3 To Lycanthropy",
+            "Prevent Monster Heal (Mal)",
+            "+25-40 To Strength (varies)",
+            "+10 To Energy (Lum)",
+            "+2 To Mana After Each Kill (Tir)",
+            "Level 13 Summon Grizzly (5 Charges)",
         ],
     },
 ]
