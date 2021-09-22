@@ -83,7 +83,7 @@ const runewords = [
             "Um"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "15% Chance To Cast level 10 Bone Armor When Struck",
@@ -104,7 +104,7 @@ const runewords = [
             "Gul"
         ],
         "itemTypes": [
-            "Missle Weapons"
+            "Bows"
         ],
         "effects": [
             "35% Chance To Cast Level 14 Amplify Damage When Struck",
@@ -129,7 +129,7 @@ const runewords = [
             "Eth"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "Level 15-21 Thorns Aura When Equipped (varies)",
@@ -213,7 +213,7 @@ const runewords = [
             "Ist"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "+2 To All Skills",
@@ -316,7 +316,7 @@ const runewords = [
             "Io"
         ],
         "itemTypes": [
-            "Head"
+            "Headgear"
         ],
         "effects": [
             "1% Chance To Cast lvl 50 Delirium When Struck",
@@ -398,7 +398,7 @@ const runewords = [
             "Sol"
         ],
         "itemTypes": [
-            "Armor",
+            "Body Armor",
             "Shields"
         ],
         "effects": [
@@ -454,7 +454,7 @@ const runewords = [
             "Thul"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "40% faster hit Recovery",
@@ -479,7 +479,7 @@ const runewords = [
             "Amn"
         ],
         "itemTypes": [
-            "Missle Weapons"
+            "Bows"
         ],
         "effects": [
             "Level 15 Thorns Aura When Equipped",
@@ -503,7 +503,7 @@ const runewords = [
             "Ber"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "+2 To All Skills",
@@ -527,7 +527,7 @@ const runewords = [
             "Sol"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "5% Chance To Cast Level 15 Blaze When Struck",
@@ -550,7 +550,7 @@ const runewords = [
             "Sur"
         ],
         "itemTypes": [
-            "All Melee Weapons"
+            "Any Melee Weapon"
         ],
         "effects": [
             "Indestructible",
@@ -576,7 +576,7 @@ const runewords = [
             "Dol"
         ],
         "itemTypes": [
-            "Shields"
+            "Paladin Shields"
         ],
         "effects": [
             "15% Chance To Cast Level 5 Life Tap On Striking",
@@ -602,7 +602,7 @@ const runewords = [
             "Eld"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "effects": [
             "Level 12-15 Fanaticism Aura When Equipped (varies)",
@@ -654,8 +654,8 @@ const runewords = [
             "Lo"
         ],
         "itemTypes": [
-            "Weapons",
-            "Armor"
+            "Any Weapon",
+            "Body Armor"
         ],
         "effects": [
             "Both",
@@ -667,12 +667,12 @@ const runewords = [
             "All Resistances +25-30 (varies)",
             "12% Damage Taken Goes To Mana",
             "+1 To Light Radius",
-            "Weapons",
+            "Only on Weapons:",
             "+9 To Minimum Damage",
             "+50 To Attack Rating",
             "20% Deadly Strike",
             "Hit Causes Monster To Flee 25%",
-            "Armor",
+            "Only on Armor:",
             "+15 Defense",
             "Replenish Life +7",
             "+5% To Maximum Lightning Resist",
@@ -688,7 +688,7 @@ const runewords = [
             "Eth"
         ],
         "itemTypes": [
-            "All Melee Weapons"
+            "Any Melee Weapon"
         ],
         "effects": [
             "40% Increased Attack Speed",
@@ -712,7 +712,7 @@ const runewords = [
             "Pul"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "effects": [
             "15% Chance To Cast Level 3 Dim Vision When Struck",
@@ -790,7 +790,7 @@ const runewords = [
             "Ko"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "effects": [
             "Level 10 Vigor Aura When Equipped",
@@ -871,7 +871,7 @@ const runewords = [
             "Sol"
         ],
         "itemTypes": [
-            "All Melee Weapons"
+            "Any Melee Weapon"
         ],
         "clvl": 27,
         "effects": [
@@ -897,7 +897,7 @@ const runewords = [
             "Lo"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "clvl": 65,
         "effects": [
@@ -1100,7 +1100,7 @@ const runewords = [
             "Fal"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 41,
         "effects": [
@@ -1141,7 +1141,7 @@ const runewords = [
             "Eth"
         ],
         "itemTypes": [
-            "All Melee Weapons"
+            "Any Melee Weapon"
         ],
         "clvl": 15,
         "effects": [
@@ -1163,7 +1163,7 @@ const runewords = [
             "Nef"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "clvl": 39,
         "effects": [
@@ -1212,7 +1212,7 @@ const runewords = [
             "Nef"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 25,
         "effects": [
@@ -1232,7 +1232,7 @@ const runewords = [
             "Tir"
         ],
         "itemTypes": [
-            "Headgear(all types)"
+            "Headgear"
         ],
         "clvl": 13,
         "effects": [
@@ -1311,7 +1311,7 @@ const runewords = [
             "Lem"
         ],
         "itemTypes": [
-            "All Weapons"
+            "Any Weapon"
         ],
         "clvl": 43,
         "effects": [
@@ -1337,7 +1337,7 @@ const runewords = [
             "Amn"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 29,
         "effects": [
@@ -1359,7 +1359,7 @@ const runewords = [
             "Jah"
         ],
         "itemTypes": [
-            "Weapons",
+            "Any Weapon",
             "Shields"
         ],
         "clvl": 65,
@@ -1372,11 +1372,11 @@ const runewords = [
             "-28% To Enemy Fire Resistance",
             "+350-400 Defense Vs. Missile (varies)",
             "+15-21 Fire Absorb (varies)",
-            "Weapons",
+            "Only on Weapons:",
             "Ignores Target's Defense",
             "14% Mana Stolen Per Hit",
             "20% Deadly Strike",
-            "Shields",
+            "Only on Shields:",
             "+50 To Life",
             "+5% To Maximum Lightning Resist",
             "+10% To Maximum Fire Resist "
@@ -1416,7 +1416,7 @@ const runewords = [
             "Eld"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 55,
         "effects": [
@@ -1436,7 +1436,7 @@ const runewords = [
             "Tir"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 49,
         "effects": [
@@ -1481,7 +1481,7 @@ const runewords = [
             "Ith"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 49,
         "effects": [
@@ -1575,7 +1575,7 @@ const runewords = [
             "Vex"
         ],
         "itemTypes": [
-            "Weapons"
+            "Any Weapon"
         ],
         "clvl": 55,
         "effects": [
@@ -1601,7 +1601,7 @@ const runewords = [
             "Lum"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 37,
         "effects": [
@@ -1677,7 +1677,7 @@ const runewords = [
             "Eth"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 17,
         "effects": [
@@ -1723,7 +1723,7 @@ const runewords = [
             "Lum"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 47,
         "effects": [
@@ -1745,7 +1745,7 @@ const runewords = [
             "Tir"
         ],
         "itemTypes": [
-            "Melee Weapons"
+            "Any Melee Weapon"
         ],
         "clvl": 25,
         "effects": [
@@ -1765,7 +1765,7 @@ const runewords = [
             "Lem"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 43,
         "effects": [
@@ -1786,7 +1786,7 @@ const runewords = [
             "Mal"
         ],
         "itemTypes": [
-            "All Weapons"
+            "Any Weapon"
         ],
         "clvl": 49,
         "effects": [
@@ -1835,7 +1835,7 @@ const runewords = [
             "Tir"
         ],
         "itemTypes": [
-            "Armor"
+            "Body Armor"
         ],
         "clvl": 43,
         "effects": [
@@ -1874,7 +1874,7 @@ const runewords = [
             "El"
         ],
         "itemTypes": [
-            "Melee Weapons"
+            "Any Melee Weapon"
         ],
         "clvl": 61,
         "effects": [
@@ -1899,7 +1899,7 @@ const runewords = [
             "Mal"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "clvl": 63,
         "effects": [
@@ -1923,7 +1923,7 @@ const runewords = [
             "Eth"
         ],
         "itemTypes": [
-            "Missile Weapons"
+            "Bows"
         ],
         "clvl": 21,
         "effects": [
@@ -1939,16 +1939,16 @@ const runewords = [
     }
 ]
 
-
-
-console.log(JSON.stringify(runewords))
-
 const validateRunewords = () => {
     const missingRunes = runewords.map(runeword => runeword.runes.filter(rune => !runes.includes)).flat()
-    console.warn('Possibly fat-fingered rune names:', missingRunes)
+    if (missingRunes.length) {
+        console.warn('Possibly fat-fingered rune names:', missingRunes)
+    }
 
-    const itemTypes = Array.from(new Set(runewords.map(runeword => runeword.itemTypes).flat()))
-    console.warn('All item types (check those out by hand for now)', itemTypes)
+    const itemTypes = Array.from(new Set(runewords.map(runeword => runeword.itemTypes).flat())).sort()
+    if (itemTypes.length) {
+        // console.warn('All item types (check those out by hand for now)', itemTypes)
+    }
 
     const unfinishedRunewords = [
         ...runewords.filter(runeword => !runeword.itemTypes.length),
@@ -1956,7 +1956,9 @@ const validateRunewords = () => {
         ...runewords.filter(runeword => !runeword.runes.length),
         ...runewords.filter(runeword => runeword.clvl > 99),
     ]
-    console.warn('Unfinished runewords, please fill these in:', unfinishedRunewords.map(runeword => runeword.name))
+    if (unfinishedRunewords.length) {
+        console.warn('Unfinished runewords, please fill these in:', unfinishedRunewords.map(runeword => runeword.name))
+    }
 }
 
 validateRunewords()
