@@ -13,9 +13,9 @@
             <table>
                 <thead>
                     <th><input id="filter-name" type="text" name="name" placeholder="Name" oninput="renderRunewords()" /></th>
-                    <th>Level</th>
+                    <th><input id="filter-level" type="number" min="0" max="99" name="level" placeholder="Level" oninput="renderRunewords()" /></th>
                     <th><input id="filter-item-types" type="text" name="item-types" placeholder="Item Types" oninput="renderRunewords()" /></th>
-                    <th>Runes</th>
+                    <th><input id="filter-runes" type="text" name="runes" placeholder="Runes" oninput="renderRunewords()" /></th>
                     <th><input id="filter-effects" type="text" name="effects" placeholder="Effects" oninput="renderRunewords()" /></th>
                 </thead>
                 <tbody id="runewords"></tbody>

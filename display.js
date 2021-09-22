@@ -59,13 +59,18 @@ const renderRunewords = () => {
 
     const nameFilter = document.getElementById('filter-name').value
     const effectsFilter = document.getElementById('filter-effects').value
+    const runesFilter = document.getElementById('filter-runes').value
     const itemTypesFilter = document.getElementById('filter-item-types').value
+    const levelFilter = Number(document.getElementById('filter-level').value)
 
     runewords
         .filter(runeword => runeword.runes.length === runeword.runes.filter(rune => selectedRunes.includes(rune)).length)
         .filter(runeword => !nameFilter || runeword.name.toLowerCase().includes(nameFilter))
         .filter(runeword => !effectsFilter || runeword.effects.join('').toLowerCase().includes(effectsFilter))
         .filter(runeword => !itemTypesFilter || runeword.itemTypes.join('').toLowerCase().includes(itemTypesFilter))
+        .filter(runeword => !runesFilter || runeword.runes.join('').toLowerCase().includes(runesFilter))
+        .filter(runeword => !itemTypesFilter || runeword.itemTypes.join('').toLowerCase().includes(itemTypesFilter))
+        .filter(runeword => !levelFilter || runeword.clvl <= levelFilter)
         .map(createRunewordRow).forEach(el => document.getElementById('runewords').append(el))
 }
 
