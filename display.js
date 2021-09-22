@@ -1,3 +1,11 @@
+const listToLines = stringList => {
+    return stringList.map(line => {
+        const lineWrapper = document.createElement('div')
+        lineWrapper.append(line)
+        return lineWrapper
+    })
+}
+
 const createRunewordRow = runeword => {
     const wrapper = document.createElement('tr')
 
@@ -8,19 +16,13 @@ const createRunewordRow = runeword => {
     level.append(runeword.clvl)
 
     const itemTypes = document.createElement('td')
-    itemTypes.append(runeword.itemTypes)
+    listToLines(runeword.itemTypes).forEach(el => itemTypes.appendChild(el))
 
     const runes = document.createElement('td')
-    runes.append(runeword.runes)
+    listToLines(runeword.runes).forEach(el => runes.appendChild(el))
 
     const effects = document.createElement('td')
-    runeword.effects.map(line => {
-        const lineWrapper = document.createElement('div')
-        lineWrapper.append(line)
-        return lineWrapper
-    }).forEach(el => effects.appendChild(el))
-
-
+    listToLines(runeword.effects).forEach(el => effects.appendChild(el))
 
     wrapper.append(name)
     wrapper.append(level)
@@ -39,11 +41,13 @@ const renderRunewords = () => {
 
     const nameFilter = document.getElementById('filter-name').value
     const effectsFilter = document.getElementById('filter-effects').value
+    const itemTypesFilter = document.getElementById('filter-item-types').value
 
     runewords
         .filter(runeword => runeword.runes.length === runeword.runes.filter(rune => selectedRunes.includes(rune)).length)
         .filter(runeword => !nameFilter || runeword.name.toLowerCase().includes(nameFilter))
         .filter(runeword => !effectsFilter || runeword.effects.join('').toLowerCase().includes(effectsFilter))
+        .filter(runeword => !itemTypesFilter || runeword.itemTypes.join('').toLowerCase().includes(itemTypesFilter))
         .map(createRunewordRow).forEach(el => document.getElementById('runewords').append(el))
 }
 
