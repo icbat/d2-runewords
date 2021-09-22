@@ -11,11 +11,11 @@
         </div>
         <table>
             <thead>
-                <th>Name</th>
+                <th><input id="filter-name" type="text" name="name" placeholder="Name" oninput="renderRunewords()" /></th>
                 <th>Level</th>
                 <th>Item Types</th>
                 <th>Runes</th>
-                <th>Effects</th>
+                <th><input id="filter-effects" type="text" name="effects" placeholder="Effects" oninput="renderRunewords()" /></th>
             </thead>
             <tbody id="runewords"></tbody>
         </table>

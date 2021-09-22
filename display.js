@@ -37,10 +37,13 @@ const renderRunewords = () => {
         .filter(el => el.checked)
         .map(el => el.name)
 
-    runewords.map(runeword => runeword.runes.filter(rune => selectedRunes.includes(rune))).forEach(out => console.log(out))
+    const nameFilter = document.getElementById('filter-name').value
+    const effectsFilter = document.getElementById('filter-effects').value
 
     runewords
         .filter(runeword => runeword.runes.length === runeword.runes.filter(rune => selectedRunes.includes(rune)).length)
+        .filter(runeword => !nameFilter || runeword.name.toLowerCase().includes(nameFilter))
+        .filter(runeword => !effectsFilter || runeword.effects.join('').toLowerCase().includes(effectsFilter))
         .map(createRunewordRow).forEach(el => document.getElementById('runewords').append(el))
 }
 
