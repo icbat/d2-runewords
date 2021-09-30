@@ -57,10 +57,10 @@ const renderRunewords = () => {
         .filter(el => el.checked)
         .map(el => el.value)
 
-    const nameFilter = document.getElementById('filter-name').value
-    const effectsFilter = document.getElementById('filter-effects').value
-    const runesFilter = document.getElementById('filter-runes').value
-    const itemTypesFilter = document.getElementById('filter-item-types').value
+    const nameFilter = document.getElementById('filter-name').value.toLowerCase()
+    const effectsFilter = document.getElementById('filter-effects').value.toLowerCase()
+    const runesFilter = document.getElementById('filter-runes').value.toLowerCase()
+    const itemTypesFilter = document.getElementById('filter-item-types').value.toLowerCase()
     const levelFilter = Number(document.getElementById('filter-level').value)
 
     runewords
